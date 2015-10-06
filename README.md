@@ -19,7 +19,7 @@ This box use the default unsecure keys, due to a bug in vagrant > 1.7.2.
 ## Official documentation
 - https://docs.vagrantup.com/v2/virtualbox/boxes.html
 
-## Tutorials
+## Tutorials
 - https://scotch.io/tutorials/how-to-create-a-vagrant-base-box-from-an-existing-one
 - https://blog.engineyard.com/2014/building-a-vagrant-box
 
