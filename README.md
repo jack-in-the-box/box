@@ -4,6 +4,17 @@
 
 Warning: Security is inexistant! Don't use it in production!
 
+## How-to
+To rebuild this box:
+- Init a new vagrant project with a debian-jessy64.
+- Manage users and passwords
+- Install all dependencies (Puppet, Apache2, PHP5.6 and Postgresql9.4, ...)
+- Check public/private key.
+- Force config.ssh.insert_key config key to false in your vagrant file.
+- Package the box
+
+That's all!
+
 ## Root password
 
 The root password is "vagrant".
