@@ -9,7 +9,7 @@ Warning: Security is inexistant! Don't use it in production!
 The root password is "vagrant".
 The user "vagrant" is in the sudoers.
 
-## SSH keys
+## SSH keys
 This box use the default unsecure keys, due to a bug in vagrant > 1.7.2.
 - https://github.com/mitchellh/vagrant/tree/master/keys
 
