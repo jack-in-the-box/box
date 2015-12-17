@@ -1,22 +1,22 @@
 # Jack in the box Vagrant dev boxes
 
-- jitb-debian-jessie64 is a box based on Debian Jessie 64 with Puppet, Apache2, PHP5.6 and Postgresql9.4
+- jitb-debian-jessie64 is a box based on Debian Jessie 64 with Puppet, Apache 2, PHP 7.0 and Postgresql9.4
 
 Warning: Security is inexistant! Don't use it in production!
 
 ## How-to
 To rebuild this box:
-- Init a new vagrant project with a debian-jessy64.
+- Init a new vagrant project with a debian/jessie64.
 - Manage users and passwords
-- Install all dependencies (Puppet, Apache2, PHP5.6 and Postgresql9.4, ...)
+- Install all dependencies (Puppet, Apache, PHP and Postgresql, ...)
 - Check public/private key.
 - Force config.ssh.insert_key config key to false in your vagrant file.
+- Clean the box with clean.sh available in /root
 - Package the box
 
 That's all!
 
 ## Root password
-
 The root password is "vagrant".
 The user "vagrant" is in the sudoers.
 
@@ -37,5 +37,5 @@ This box use the default unsecure keys, due to a bug in vagrant > 1.7.2.
 ## Known bugs (vagrant > 1.7.2)
 When generating this box, a vagrant bug cause SSH connection failures. Do not forget to force config.ssh.insert_key config key to false
 
-See more at: 
+See more at:
 - https://github.com/mitchellh/vagrant/issues/5186
