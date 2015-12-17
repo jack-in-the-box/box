@@ -1,6 +1,6 @@
 # Jack in the box Vagrant dev boxes
 
-- jitb-debian-jessie64 is a box based on Debian Jessie 64 with Puppet, Apache 2, PHP 7.0 and Postgresql9.4
+- jitb-debian-jessie64 is a box based on Debian Jessie 64 with Puppet, Apache 2, PHP 7.0 and Postgresql 9.4
 
 Warning: Security is inexistant! Don't use it in production!
 
