@@ -1,6 +1,6 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
-# 
+#
 Vagrant.configure(2) do |config|
 
     config.ssh.insert_key = false
@@ -12,9 +12,8 @@ Vagrant.configure(2) do |config|
         # VM hostname
         box.vm.hostname = "box.jack.tools"
 
-        # The VM will be built off Ubuntu 14.04 LTS 64 bit
-        box.vm.box = "jitb/debian/jessie64"
-        box.vm.box_url = "https://github.com/jack-in-the-box/box/releases/download/0.1/jitb-debian-jessie64.box"
+        # The VM will be built off the latest box
+        box.vm.box = "jitb/box"
 
         # Create a private network, which allows host-only access to the machine
         # using a specific IP.
