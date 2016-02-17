@@ -15,9 +15,12 @@ Vagrant.configure(2) do |config|
         # The VM will be built off the latest box
         box.vm.box = "jitb/box"
 
+        # Synced folder configuration
+        box.vm.synced_folder ".", "/vagrant"
+
         # Create a private network, which allows host-only access to the machine
         # using a specific IP.
-        box.vm.network :private_network, ip: "192.168.01.01"
+        box.vm.network :private_network, ip: "192.168.42.100"
     end
 
 end
