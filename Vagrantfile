@@ -17,7 +17,7 @@ Vagrant.configure(2) do |config|
 
         # Provider-specific configuration so you can fine-tune various
         # backing providers for Vagrant. These expose provider-specific options.
-        web.vm.provider :virtualbox do |vb|
+        box.vm.provider :virtualbox do |vb|
             # Don't boot with headless mode
             # vb.gui = true
             # Use VBoxManage to customize the VM. For example to change memory:
