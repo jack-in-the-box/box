@@ -2,6 +2,21 @@
 # vi: set ft=ruby :
 #
 Vagrant.configure(2) do |config|
+    case RbConfig::CONFIG['host_os']
+        when /cygwin|mswin|msys|mingw|bccwin|wince|emc|emx|windows/i
+            # Windows
+            cpus = `wmic cpu get NumberOfCores`.split("\n")[2].to_i
+        when /linux|arch/i
+            # linux
+            cpus = `nproc`.to_i
+        when /darwin|mac os/i
+            # MacOS
+            cpus = `sysctl -n hw.ncpu`.to_i
+        else
+            # Others...
+            cpus = 2
+    end
+
 
     config.ssh.insert_key = false
     config.vbguest.auto_update = false
@@ -23,7 +38,7 @@ Vagrant.configure(2) do |config|
             # Use VBoxManage to customize the VM. For example to change memory:
             vb.customize [
                 'modifyvm', :id,
-                '--cpus', 2,
+                '--cpus', cpus,
                 '--memory', "512",
                 '--name', "Proposal Studio Box"
             ]
