@@ -1,26 +1,13 @@
 {
-    "description": "Jack int the Box development box based on Debian Jessie x64",
+    "description": "Jack in the Box development box based on Debian Jessie x64",
     "short_description": "JITB Debian Jessie x64",
-    "name": "jitb/debian/jessie64",
+    "name": "jitb/box",
     "versions": [
         {
-            "version": "0.1.0",
-            "status": "active",
-            "description_html": "<p>Dev Environment</p>",
-            "description_markdown": "Dev Environment",
+            "version": "1.4.1",
             "providers": [{
                 "name": "virtualbox",
-                "url": "https://github.com/jack-in-the-box/box/releases/download/0.1/jitb-debian-jessie64.box"
-            }]
-        },
-        {
-            "version": "1.0.0",
-            "status": "active",
-            "description_html": "<p>Dev Environment</p>",
-            "description_markdown": "Dev Environment",
-            "providers": [{
-                "name": "virtualbox",
-                "url": "https://github.com/jack-in-the-box/box/releases/download/v1.0.0/jitb-debian-jessie64.box"
+                "url": "jitb-debian-jessie64.box"
             }]
         }
     ]
