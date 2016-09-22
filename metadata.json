@@ -7,7 +7,7 @@
             "version": "1.4.1",
             "providers": [{
                 "name": "virtualbox",
-                "url": "jitb-debian-jessie64.box"
+                "url": "jitb.box"
             }]
         }
     ]
