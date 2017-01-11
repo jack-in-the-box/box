@@ -50,6 +50,10 @@ Vagrant.configure(2) do |config|
         # Create a private network, which allows host-only access to the machine
         # using a specific IP.
         box.vm.network :private_network, ip: "192.168.42.100"
+        
+        # Provisioning script made for cleanup and compression
+        box.vm.provision :shell, :inline => "/vagrant/resources/cleanup.sh"
+        box.vm.provision :shell, :inline => "/vagrant/resources/zerodisk.sh"
     end
 
 end
