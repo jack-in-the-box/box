@@ -1,13 +1,13 @@
 {
-    "description": "Jack in the Box development box based on Debian Jessie x64",
-    "short_description": "JITB Debian Jessie x64",
+    "description": "Proposal Studio development box based on Debian Jessie x64",
+    "short_description": "Proposal Studio Debian Jessie x64",
     "name": "jitb/box",
     "versions": [
         {
-            "version": "1.4.2",
+            "version": "1.5.0",
             "providers": [{
                 "name": "virtualbox",
-                "url": "jitb.box"
+                "url": "ps.box"
             }]
         }
     ]
