@@ -1,5 +1,5 @@
 #!/bin/bash
-#
+
 # This script needs admin rights
 if [ 0 != $(id -u) ]; then
 	echo "Error: This script must be run as root!"
