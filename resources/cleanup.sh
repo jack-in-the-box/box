@@ -6,6 +6,10 @@ if [ 0 != $(id -u) ]; then
 	exit 1
 fi
 
+# copy version file
+echo "Copy VERSION file"
+cp /vagrant/VERSION /etc/box_version
+
 # Removing leftover leases and persistent rules
 echo "Cleaning up dhcp leases and rules"
 rm /var/lib/dhcp/*
