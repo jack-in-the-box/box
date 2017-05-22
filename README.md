@@ -1,13 +1,18 @@
-# Box
+# Jack in the Box development Box
 
 A Vagrant box for web development.
 
 ## Read me first
 
 This project aims to give you the necessary tools to build yourself the Box.  
-**Note:** If you only intend to use the Box, you will never have to build it yourself! Instead, get it from:
-* [GitHub releases](https://github.com/jack-in-the-box/box/releases)
-* [Atlas by HashiCorp](https://atlas.hashicorp.com/jitb/boxes/box)
+If you only intend to use the Box, you will never have to build it yourself! Instead, get it from our public releases.
+
+### Public releases
+
+You can directly add the box to your environment using the public versions available on [Atlas by HashiCorp](https://atlas.hashicorp.com/jitb/boxes/box).  
+To do so, run `vagrant box add jitb/box`.
+
+You can also download the packaged box file through the [GitHub releases](https://github.com/jack-in-the-box/box/releases).
 
 ## About
 
@@ -22,10 +27,6 @@ In order to build the Box effectively, you'll need to have a few tools installed
 2. Install [VirtualBox](http://virtualbox.org)
 3. Install [Vagrant](http://vagrantup.com)
 
-### Windows-specific ###
-
-1. Add the Git binaries to your path
-
 ### Recommended
 
 1. Use a development workstation with at least 2 cores and 8GB of RAM, as Vagrant should be allocated 1GB of RAM
@@ -39,12 +40,12 @@ In order to build the Box effectively, you'll need to have a few tools installed
 3. Run `vagrant up`
 4. Run `vagrant package --output ps.box`
 
-**Note**: Steps 3. and 4. can be replaced with a call to `build.sh` on bash available environments.
+**Note**: Steps 3. and 4. can be replaced with a call to `build.sh` script on bash available environments.
 
 ## What you get ##
 
 After the build process is done, you have a file named `ps.box` that can be imported in Vagrant or VirtualBox.
-To import the built box in Vagrant, use `vagrant box add metadata.json`
+To import the built box in Vagrant, run `vagrant box add metadata.json`.
 
 ### Software stack ###
 
