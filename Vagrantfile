@@ -33,12 +33,12 @@ Vagrant.configure(2) do |config|
         # VirtualBox provider
         box.vm.provider :virtualbox do |vb|
             # System configuration
-            vb.name = "Neap Box"
+            vb.name = "Box"
             vb.cpus = cpus
             vb.memory = "1024"
             vb.customize [
                 "modifyvm", :id,
-                "--groups", "/Neap",
+                "--groups", "/Proposal Studio",
             ]
         end
 
