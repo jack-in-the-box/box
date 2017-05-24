@@ -29,6 +29,11 @@ try
 	echo "Activate PHP-FPM in Apache"
 	a2enconf php7.0-fpm
 
+	echo "Force register service script"
+	systemctl unmask php7.0-fpm
+	systemctl enable php7.0-fpm
+	systemctl daemon-reload
+
 	echo "Restart PHP-FPM service"
 	service php7.0-fpm restart
 )
