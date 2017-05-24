@@ -26,6 +26,9 @@ try
 	echo "Disable OPcache for FPM"
 	sed -i 's/;\?opcache.enable=.\+/opcache.enable=0/g' /etc/php/7.0/fpm/php.ini
 
+	echo "Setup Xdebug"
+	cp /vagrant/resources/xdebug/xdebug.ini /etc/php/7.0/mods-available/xdebug.ini
+
 	echo "Activate PHP-FPM in Apache"
 	a2enconf php7.0-fpm
 
