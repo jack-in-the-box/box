@@ -57,7 +57,7 @@ Once Vagrant is done provisioning the VM, you will have a box containing:
 * [PostgreSQL](http://www.postgresql.org/) 9.5.7, as database system
 * [Redis](http://redis.io/) 2.8.19, as data structure store
 * [MailCatcher](https://mailcatcher.me/) 0.6.5 as mail catching server
-* [Apache 2](https://httpd.apache.org/) 1.11.10, as web server, with:
+* [Apache 2](https://httpd.apache.org/) 2.4.25, as web server, with:
 * [PHP](http://php.net/) 7.0.19, as server-side scripting language, with:
     * [PHP-FPM](http://php-fpm.org/) 7.0.19, as PHP process manager
     * [Xdebug](http://xdebug.org/) 2.5.1, as debugger and profiler tool
