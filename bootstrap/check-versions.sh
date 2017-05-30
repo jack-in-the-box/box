@@ -22,7 +22,7 @@ XDEBUG=$(echo `php -v` | sed 's/.*Xdebug v\([^,]*\).*/\1/')
 COMPOSER=$(echo `composer 2>&1` | sed 's/.*Composer version \([^ ]*\).*/\1/')
 NODEJS=$(echo `node -v` | sed 's/v\([^,]*\).*/\1/')
 NPM=$(npm -v)
-YARN=$(npm --version)
+YARN=$(yarn --version)
 
 echo 'Box: '$NEAPBOX
 echo '`-- Debian: '$DEBIAN
