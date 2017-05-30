@@ -34,6 +34,9 @@ try
 	echox "${text_cyan}Build Redis"
 	/vagrant/bootstrap/build-redis.sh
 
+	echox "${text_cyan}Build MailCatcher"
+	/vagrant/bootstrap/setup-mailcatcher.sh
+
 	echox "${text_cyan}Setup Apache 2"
 	/vagrant/bootstrap/setup-apache2.sh
 
