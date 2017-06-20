@@ -43,7 +43,7 @@ try
 	echox "${text_cyan}Setup PHP 7.0"
 	/vagrant/bootstrap/setup-php7.0.sh
 
-	echox "${text_cyan}Setup Compoer"
+	echox "${text_cyan}Setup Composer"
 	/vagrant/bootstrap/setup-composer.sh
 
 	echox "${text_cyan}Setup NPM"
