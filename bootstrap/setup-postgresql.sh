@@ -13,6 +13,8 @@ try
 (
 	throwErrors
 
+	export DEBIAN_FRONTEND=noninteractive
+
 	echo "Add repository to Aptitude"
 	wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add -
 	echo "deb http://apt.postgresql.org/pub/repos/apt/ jessie-pgdg main" >/etc/apt/sources.list.d/pgdg.list
