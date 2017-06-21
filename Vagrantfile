@@ -25,7 +25,7 @@ Vagrant.configure(2) do |config|
 
         # The VM will be built off the latest box
         box.vm.box = "debian/contrib-jessie64"
-        box.vm.box_version = ">= 8.7.0"
+        box.vm.box_version = ">= 8.8.0"
 
         # Synced folder configuration
         box.vm.synced_folder ".", "/vagrant"
