@@ -46,6 +46,9 @@ try
 	echox "${text_cyan}Setup Composer"
 	/vagrant/bootstrap/setup-composer.sh
 
+	echox "${text_cyan}Setup Adminer"
+	/vagrant/bootstrap/setup-adminer.sh
+
 	echox "${text_cyan}Setup NPM"
 	/vagrant/bootstrap/setup-npm.sh
 

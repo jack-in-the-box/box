@@ -20,6 +20,7 @@ PHP=$(echo `php -v` | sed 's/PHP \([^-]*\).*/\1/')
 PHPFPM=$(echo `php-fpm7.0 -v` | sed 's/PHP \([^-]*\).*/\1/')
 XDEBUG=$(echo `php -v` | sed 's/.*Xdebug v\([^,]*\).*/\1/')
 COMPOSER=$(echo `composer 2>&1` | sed 's/.*Composer version \([^ ]*\).*/\1/')
+ADMINER=$(ls /var/www/adminer-*  | sed 's/\/var\/www\/adminer-\(.*\)\.php/\1/')
 NODEJS=$(echo `node -v` | sed 's/v\([^,]*\).*/\1/')
 NPM=$(npm -v)
 YARN=$(yarn --version)
@@ -37,6 +38,7 @@ echo '  +-- PHP: '$PHP
 echo '  | +-- PHP-FPM: '$PHPFPM
 echo '  | +-- Xdebug: '$XDEBUG
 echo '  | `-- Composer: '$COMPOSER
+echo '  | `-- Adminer: '$ADMINER
 echo '  +-- NodeJS: '$NODEJS
 echo '  | `-- NPM: '$NPM
 echo '  |-- Yarn: '$YARN
