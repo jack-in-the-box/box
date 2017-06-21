@@ -52,6 +52,9 @@ try
 	echox "${text_cyan}Setup Yarn"
 	/vagrant/bootstrap/setup-yarn.sh
 
+	echox "${text_cyan}Setup ImagMagick"
+	/vagrant/bootstrap/setup-imagemagick.sh
+
 	echox "${text_cyan}Clean up"
 	/vagrant/bootstrap/cleanup.sh
 
