@@ -16,7 +16,7 @@ You can also download the packaged box file through the [GitHub releases](https:
 
 ## About
 
-**Version:** 1.6.0  
+**Version:** 2.0.0  
 **Project Owner:** [Jack in the Box](https://github.com/jack-in-the-box)
 
 ## Prerequisites

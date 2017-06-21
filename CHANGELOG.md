@@ -1,7 +1,7 @@
 # Change Log
 
-## [1.6.0](https://github.com/jack-in-the-box/box/tree/1.6.0)
-[Full Changelog](https://github.com/jack-in-the-box/v2/compare/1.5.0...1.6.0)
+## [2.0.0](https://github.com/jack-in-the-box/box/tree/2.0.0)
+[Full Changelog](https://github.com/jack-in-the-box/v2/compare/1.5.0...2.0.0)
 
 - added a script to build box from scracth
 - updated Debian Jessie to version 8.8
