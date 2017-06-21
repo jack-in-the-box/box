@@ -20,6 +20,10 @@ try
 	a2enmod access_compat alias auth_basic authn_core authn_file authz_core authz_host authz_user deflate dir \
 		expires filter http2 mime mpm_event negotiation proxy proxy_fcgi proxy_wstunnel rewrite setenvif \
 		socache_shmcb ssl status
+
+	echo "Prepare web folders"
+	mkdir -p /var/www
+	chown -cR vagrant:vagrant /var/www
 )
 catch || {
 	case $ex_code in
