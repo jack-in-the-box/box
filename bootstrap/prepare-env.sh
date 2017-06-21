@@ -20,28 +20,22 @@ try
 	echo "Empty the default Aptitude config"
 	truncate -s 0 /etc/apt/sources.list
 
-	echo "Create a Jessie based 'stable' Aptitude config"
+	echo "Create a 'stable' Aptitude config"
 	cat >/etc/apt/sources.list.d/stable.list <<- EOL
-	deb http://httpredir.debian.org/debian jessie main
-	deb-src http://httpredir.debian.org/debian jessie main
+	deb http://httpredir.debian.org/debian stable main
+	deb-src http://httpredir.debian.org/debian stable main
 
-	deb http://httpredir.debian.org/debian jessie-updates main
-	deb-src http://httpredir.debian.org/debian jessie-updates main
-
-	deb http://security.debian.org/ jessie/updates main
-	deb-src http://security.debian.org/ jessie/updates main
+	deb http://security.debian.org/ stable/updates main
+	deb-src http://security.debian.org/ stable/updates main
 	EOL
 
-	echo "Create a Stretch based 'testing' Aptitude config"
+	echo "Create a 'testing' Aptitude config"
 	cat >/etc/apt/sources.list.d/testing.list <<- EOL
-	deb http://httpredir.debian.org/debian stretch main
-	deb-src http://httpredir.debian.org/debian stretch main
+	deb http://httpredir.debian.org/debian testing main
+	deb-src http://httpredir.debian.org/debian testing main
 
-	deb http://httpredir.debian.org/debian stretch-updates main
-	deb-src http://httpredir.debian.org/debian stretch-updates main
-
-	deb http://security.debian.org/ stretch/updates main
-	deb-src http://security.debian.org/ stretch/updates main
+	deb http://security.debian.org/ testing/updates main
+	deb-src http://security.debian.org/ testing/updates main
 	EOL
 
 	echo "Setup Aptitude to use 'stable' config by default"
