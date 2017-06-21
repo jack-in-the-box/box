@@ -37,7 +37,7 @@ echo '  +-- Apache 2: '$APACHE2
 echo '  +-- PHP: '$PHP
 echo '  | +-- PHP-FPM: '$PHPFPM
 echo '  | +-- Xdebug: '$XDEBUG
-echo '  | `-- Composer: '$COMPOSER
+echo '  | +-- Composer: '$COMPOSER
 echo '  | `-- Adminer: '$ADMINER
 echo '  +-- NodeJS: '$NODEJS
 echo '  | `-- NPM: '$NPM
