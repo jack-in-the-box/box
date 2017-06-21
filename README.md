@@ -65,3 +65,4 @@ Once Vagrant is done provisioning the VM, you will have a box containing:
 * [NodeJS](https://nodejs.org/) 6.10.3, as JavaScript runtime
     * [NPM](https://www.npmjs.com/) 4.6.1, as JavaScript package Manager
 * [Yarn](https://yarnpkg.com/) 0.24.5, as dependy manager
+* [ImageMagick](https://www.imagemagick.org/) 6.8.9, as images converter

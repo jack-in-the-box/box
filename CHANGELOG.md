@@ -20,6 +20,7 @@
 - updated NPM to version 4.6.1
 - added Yarn in version 0.24.5
 - added NTP service
+- added ImageMagick in version 6.8.9
 
 ## [1.5.0](https://github.com/jack-in-the-box/box/tree/1.5.0)
 [Full Changelog](https://github.com/jack-in-the-box/v2/compare/1.0.0...1.5.0)

@@ -23,6 +23,7 @@ COMPOSER=$(echo `composer 2>&1` | sed 's/.*Composer version \([^ ]*\).*/\1/')
 NODEJS=$(echo `node -v` | sed 's/v\([^,]*\).*/\1/')
 NPM=$(npm -v)
 YARN=$(yarn --version)
+IMAGEMAGICK=$(echo `convert -version` | sed 's/Version: ImageMagick \([^-]*\).*/\1/')
 
 echo 'Box: '$NEAPBOX
 echo '`-- Debian: '$DEBIAN
@@ -38,4 +39,5 @@ echo '  | +-- Xdebug: '$XDEBUG
 echo '  | `-- Composer: '$COMPOSER
 echo '  +-- NodeJS: '$NODEJS
 echo '  | `-- NPM: '$NPM
-echo '  `-- Yarn: '$YARN
+echo '  |-- Yarn: '$YARN
+echo '  `-- ImageMagick: '$IMAGEMAGICK
