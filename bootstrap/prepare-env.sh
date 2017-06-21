@@ -83,6 +83,7 @@ EOF
 
 	echo "Prepare web folders"
 	mkdir -p /var/www
+	chown -cR vagrant:vagrant /var/www
 )
 catch || {
 	case $ex_code in
