@@ -20,7 +20,7 @@
 - updated Adminer to version 4.3.1
 - updated NodeJS to version 6.11.0
 - updated NPM to version 5.0.4
-- added Yarn in version 0.24.5
+- added Yarn in version 0.24.6
 - added NTP service
 - added ImageMagick in version 6.8.9
 - added Adminer in version 4.3.1

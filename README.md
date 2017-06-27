@@ -66,5 +66,5 @@ Once Vagrant is done provisioning the VM, you will have a box containing:
     * [Adminer](https://www.adminer.org/) 4.3.1, as web database manager
 * [NodeJS](https://nodejs.org/) 6.11.0, as JavaScript runtime
     * [NPM](https://www.npmjs.com/) 5.0.4, as JavaScript package Manager
-* [Yarn](https://yarnpkg.com/) 0.24.5, as dependy manager
+* [Yarn](https://yarnpkg.com/) 0.24.6, as dependy manager
 * [ImageMagick](https://www.imagemagick.org/) 6.8.9, as images converter
