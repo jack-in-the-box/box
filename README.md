@@ -52,7 +52,7 @@ To import the built box in Vagrant, run `vagrant box add metadata.json`.
 This box uses Vagrant's [shell provisioner](https://docs.vagrantup.com/v2/provisioning/shell.html) over a large collection of scripts to kick things off.
 
 Once Vagrant is done provisioning the VM, you will have a box containing:
-* [Debian](https://www.debian.org/) Jessie 8.8, as operating system, with:
+* [Debian](https://www.debian.org/) Stretch 9.0, as operating system, with:
     * [VirtualBox](https://www.virtualbox.org/) Guest Additions 5.1.22
 * [PostgreSQL](http://www.postgresql.org/) 9.5.7, as database system
 * [Redis](http://redis.io/) 2.8.19, as data structure store

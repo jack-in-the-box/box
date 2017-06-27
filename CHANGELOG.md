@@ -4,7 +4,7 @@
 [Full Changelog](https://github.com/jack-in-the-box/v2/compare/1.5.0...2.0.0)
 
 - added a script to build box from scracth
-- updated Debian Jessie to version 8.8
+- updated to Debian Stretch version 9.0
 - updated Debian packages
 - fixed ZSH configuration
 - updated VirtualBox Guest additions to version 5.1.22
