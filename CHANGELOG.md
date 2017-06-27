@@ -11,6 +11,7 @@
 - updated VirtualBox Guest additions to version 5.1.22
 - updated PostgreSQL to version 9.5.7
 - added Redis in version 2.8.19
+- added MailCatcher in version 0.6.5
 - changed repository for PHP and PHP-FPM from "dotdeb" to "sury"
 - remove built version of Apache 2.4 to use the respository-based version
 - updated Apache to version 2.4.25
