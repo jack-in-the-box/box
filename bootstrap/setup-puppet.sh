@@ -9,23 +9,21 @@ if [ 0 != $(id -u) ]; then
 	exit 1
 fi
 
+PUPPET_VERSION=3.7.2-4
+
 try
 (
 	throwErrors
 
-	echo "Add repository to Aptitude"
-	cd /tmp
-	wget https://apt.puppetlabs.com/puppetlabs-release-jessie.deb
-	dpkg -i puppetlabs-release-jessie.deb
-	apt-get -y -q update
-
 	echo "Install Puppet package"
-	apt-get -y -q install puppet
+	apt-get -y -q install --install-suggests --allow-downgrades puppet=$PUPPET_VERSION puppet-common=$PUPPET_VERSION
+	# Mark Puppet packages not to be upgraded with a more recent version
+	sudo apt-mark hold puppet-common puppet
 
-	echo "Install modules"
-	puppet module install puppetlabs-postgresql
+	# echo "Install modules"
 	puppet module install puppetlabs-inifile
-	puppet module install puppetlabs-apache
+	puppet module install puppetlabs-postgresql --version 4.8.0
+	puppet module install puppetlabs-apache --version 1.10.0
 )
 catch || {
 	case $ex_code in
