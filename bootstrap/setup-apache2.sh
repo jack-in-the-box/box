@@ -21,9 +21,12 @@ try
 		expires filter http2 mime mpm_event negotiation proxy proxy_fcgi proxy_wstunnel rewrite setenvif \
 		socache_shmcb ssl status
 
-	echo "Prepare web folders"
+	echo "Prepare web folder"
 	mkdir -p /var/www
 	chown -cR vagrant:vagrant /var/www
+
+	echo "Prepare log folder"
+	chown -cR vagrant:vagrant /var/log/apache2
 )
 catch || {
 	case $ex_code in
