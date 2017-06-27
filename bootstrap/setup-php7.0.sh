@@ -21,7 +21,8 @@ try
 
 	echo "Install packages"
 	apt-get -y -q install php7.0 php7.0-cli php7.0-common php7.0-curl php7.0-fpm php7.0-gd php7.0-json \
-		php7.0-mbstring php7.0-opcache php7.0-pgsql php7.0-readline php7.0-xdebug php7.0-xml php7.0-zip
+	                      php7.0-mbstring php7.0-opcache php7.0-pgsql php7.0-readline php7.0-sqlite3 php7.0-xdebug \
+	                      php7.0-xml php7.0-zip
 
 	echo "Disable OPcache for FPM"
 	sed -i 's/;\?opcache.enable=.\+/opcache.enable=0/g' /etc/php/7.0/fpm/php.ini
