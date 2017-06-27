@@ -63,7 +63,7 @@ Once Vagrant is done provisioning the VM, you will have a box containing:
     * [PHP-FPM](http://php-fpm.org/) 7.0.19, as PHP process manager
     * [Xdebug](http://xdebug.org/) 2.5.1, as debugger and profiler tool
     * [Composer](https://getcomposer.org/) 1.4.2, as dependency manager
-    * [Adminter](https://www.adminer.org/) 4.3.1, as web database manager
+    * [Adminer](https://www.adminer.org/) 4.3.1, as web database manager
 * [NodeJS](https://nodejs.org/) 6.10.3, as JavaScript runtime
     * [NPM](https://www.npmjs.com/) 4.6.1, as JavaScript package Manager
 * [Yarn](https://yarnpkg.com/) 0.24.5, as dependy manager
