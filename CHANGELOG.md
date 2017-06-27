@@ -3,7 +3,7 @@
 ## [2.0.0](https://github.com/jack-in-the-box/box/tree/2.0.0)
 [Full Changelog](https://github.com/jack-in-the-box/v2/compare/1.5.0...2.0.0)
 
-- added a script to build box from scracth
+- added a script to build box from scratch
 - updated to Debian Stretch version 9.0
 - updated Debian packages
 - added Puppet in version 3.7.2
