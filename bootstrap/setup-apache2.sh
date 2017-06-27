@@ -14,7 +14,7 @@ try
 	throwErrors
 
 	echo "Install packages"
-	apt-get -y -q install -t testing apache2 apache2-bin apache2-data apache2-utils
+	apt-get -y -q install apache2 apache2-bin apache2-data apache2-utils
 
 	echo "Enable modules"
 	a2enmod access_compat alias auth_basic authn_core authn_file authz_core authz_host authz_user deflate dir \
