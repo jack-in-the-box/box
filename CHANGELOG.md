@@ -22,7 +22,7 @@
 - updated NPM to version 5.0.4
 - added Yarn in version 0.24.6
 - added NTP service
-- added ImageMagick in version 6.8.9
+- added ImageMagick in version 6.9.7
 - added Adminer in version 4.3.1
 
 ## [1.5.0](https://github.com/jack-in-the-box/box/tree/1.5.0)
