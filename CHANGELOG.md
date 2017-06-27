@@ -19,7 +19,7 @@
 - updated Composer to version 1.4.2
 - updated Adminer to version 4.3.1
 - updated NodeJS to version 6.11.0
-- updated NPM to version 4.6.1
+- updated NPM to version 5.0.4
 - added Yarn in version 0.24.5
 - added NTP service
 - added ImageMagick in version 6.8.9
