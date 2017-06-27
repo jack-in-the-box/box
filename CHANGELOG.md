@@ -6,6 +6,7 @@
 - added a script to build box from scracth
 - updated to Debian Stretch version 9.0
 - updated Debian packages
+- added Puppet in version 3.7.2
 - fixed ZSH configuration
 - updated VirtualBox Guest additions to version 5.1.22
 - updated PostgreSQL to version 9.5.7

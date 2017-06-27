@@ -54,6 +54,7 @@ This box uses Vagrant's [shell provisioner](https://docs.vagrantup.com/v2/provis
 Once Vagrant is done provisioning the VM, you will have a box containing:
 * [Debian](https://www.debian.org/) Stretch 9.0, as operating system, with:
     * [VirtualBox](https://www.virtualbox.org/) Guest Additions 5.1.22
+* [Puppet](https://puppet.com/) Puppet 3.7.2, as configuration manager
 * [PostgreSQL](http://www.postgresql.org/) 9.5.7, as database system
 * [Redis](http://redis.io/) 2.8.19, as data structure store
 * [MailCatcher](https://mailcatcher.me/) 0.6.5 as mail catching server
