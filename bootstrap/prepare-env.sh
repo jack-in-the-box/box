@@ -17,29 +17,25 @@ try
 	cp /vagrant/resources/shutdown.sh /usr/local/sbin/shutdown
 	chmod +x /usr/local/sbin/shutdown
 
-	echo "Empty the default Aptitude config"
-	truncate -s 0 /etc/apt/sources.list
+	echo "Create sources files"
 
-	echo "Create a 'stable' Aptitude config"
-	cat >/etc/apt/sources.list.d/stable.list <<- EOL
-	deb http://httpredir.debian.org/debian stable main
-	deb-src http://httpredir.debian.org/debian stable main
+	echo "- Empty default source list"
+	echo "" > /etc/apt/sources.list
 
-	deb http://security.debian.org/ stable/updates main
-	deb-src http://security.debian.org/ stable/updates main
-	EOL
+	echo "- security.list"
+	echo "deb     http://security.debian.org/ stable/updates main contrib" >/etc/apt/sources.list.d/security.list
+	echo "deb-src http://security.debian.org/ stable/updates main contrib" >>/etc/apt/sources.list.d/security.list
 
-	echo "Create a 'testing' Aptitude config"
-	cat >/etc/apt/sources.list.d/testing.list <<- EOL
-	deb http://httpredir.debian.org/debian testing main
-	deb-src http://httpredir.debian.org/debian testing main
+	echo "- stretch.list"
+	echo "deb     http://httpredir.debian.org/debian/ stretch main contrib" >/etc/apt/sources.list.d/stretch.list
+	echo "deb-src http://httpredir.debian.org/debian/ stretch main contrib" >>/etc/apt/sources.list.d/stretch.list
 
-	deb http://security.debian.org/ testing/updates main
-	deb-src http://security.debian.org/ testing/updates main
-	EOL
+	echo "- jessie.list"
+	echo "deb     http://httpredir.debian.org/debian/ jessie main contrib" >/etc/apt/sources.list.d/jessie.list
+	echo "deb-src http://httpredir.debian.org/debian/ jessie main contrib" >>/etc/apt/sources.list.d/jessie.list
 
-	echo "Setup Aptitude to use 'stable' config by default"
-	echo 'APT::Default-Release "stable";' >/etc/apt/apt.conf.d/99defaultrelease
+	echo "Set stretch as default repository"
+	echo 'APT::Default-Release "stretch";' >/etc/apt/apt.conf.d/99default-release
 
 	echo "Clean local packages list"
 	apt-get clean
@@ -48,9 +44,9 @@ try
 	echo "Update packages to the latest version"
 	export DEBIAN_FRONTEND=noninteractive
 	apt-get -y -q update
-	apt-get -y -q -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" upgrade
-	apt-get -y -q dist-upgrade
-	apt-get -y -q upgrade
+	apt-get -y --force-yes -q -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" upgrade
+	apt-get -y --force-yes -q dist-upgrade
+	apt-get -y -q autoremove --purge
 
 	echo "Install prerequisite packages"
 	apt-get -y -q install apt-transport-https build-essential cmake curl facter g++ gcc git libcurl4-openssl-dev \
