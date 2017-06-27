@@ -61,7 +61,7 @@ Once Vagrant is done provisioning the VM, you will have a box containing:
 * [Apache 2](https://httpd.apache.org/) 2.4.25, as web server, with:
 * [PHP](http://php.net/) 7.0.19, as server-side scripting language, with:
     * [PHP-FPM](http://php-fpm.org/) 7.0.19, as PHP process manager
-    * [Xdebug](http://xdebug.org/) 2.5.1, as debugger and profiler tool
+    * [Xdebug](http://xdebug.org/) 2.5.0, as debugger and profiler tool
     * [Composer](https://getcomposer.org/) 1.4.2, as dependency manager
     * [Adminer](https://www.adminer.org/) 4.3.1, as web database manager
 * [NodeJS](https://nodejs.org/) 6.10.3, as JavaScript runtime
